@@ -31,7 +31,8 @@ We now know how much time (and how much data) is required to precisely train an 
 ## What's next for Cuisiner
 Training Cuisiner's ML model on a larger dataset with a wider variety of foods would definitely be our most immediate next step. We would also hope to translate the descriptions to different languages in an effort to make it even easier for people across cultures to use our tool and connect with others. 
 
-
+## Built with:
+pytorch, python, fastai, jupyter, html, css
 
 
 

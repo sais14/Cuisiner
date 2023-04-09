@@ -1,5 +1,26 @@
+@font-face {
+    font-family: "Amstelvar";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2729/AmstelvarAlpha-VF.ttf")
+      format("truetype");
+}
+
+.heading {
+    width: 100%;
+    text-align: left;
+    padding: none;
+    border: none;
+}
+
+.row {
+    border: none;
+}
+
+.intro {
+    font-size: 15pt;
+}
+
 .result .image {
-    max-width: 33%px;
+    max-width: 250px;
     height: 250px;
     background-image: url("test.jpg");
     background-size: cover;
@@ -9,27 +30,40 @@
 .result .text {
     background-color: rgb(237, 237, 237);
     font-weight: 700;
-    text-align: center;
     padding: 10px 0px 10px 0px;
-}
-
-#churros {
-    position: fixed;
-    bottom: 0;
-    width: 340px;
-    height: 360px;
-    left:3%;
-    pointer-events: none;
 }
 
 
 .result {
     width: 33%px;
     height: 300px;
+    text-align: center;
 }
 
-.container {
-    margin-top: 5vh;
+.buttons {
+    width: 100px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+}
+
+.buttons:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-3px);
 }
 
 .grid-container {
@@ -37,31 +71,12 @@
     grid-template-columns: auto auto auto;
     /*grid-template-rows: auto auto auto; */
     gap: 50px 10px;
-
-}
-
-footer {
-    width: 100%;
-    position: fixed;
-    margin-bottom: 0;
-    bottom: 0;
-    height: 75px;
-}
-
-footer p {
-    width: 100%;
-    text-align: center;
-    color: whitesmoke;
-    margin: 25px
-
+    height: 507px;
 
 }
 
 #uploadedImg {
-    width:intrinsic;
-    height:intrinsic;
-    max-width: 250px;
-    max-height: 250px;
+    height: 350px;
 }
 
 .lds-dual-ring {
@@ -91,3 +106,129 @@ footer p {
     }
   }
   
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30pt;
+    text-align: left;
+  }
+  
+  .intro {
+    font-size: 15pt;
+  }
+  
+  div {
+    font-family: "Roboto", sans-serif;
+    font-size: 13pt;
+    width: 130pt;
+    text-align: center;
+    margin: 10pt;
+    padding: 5pt;
+  }
+  
+  .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+  }
+  
+.inputfile + label {
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 45px;
+}
+  
+.inputfile:focus + label,
+.inputfile + label:hover {
+      background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-3px);
+}
+  
+.buttons {
+    width: 100px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+}
+  
+  #comp {
+    width: 140px;
+  }
+  
+  .buttons:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  body {
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  main {
+    float: left;
+    margin: 2em 0em 2em 5em;
+    padding: 1em 2.5em 1em 2.5em;
+    max-width: 52%;
+  }
+  
+  aside {
+    float: right;
+    margin: 2em 5em 2em 0em;
+    padding: 1em 2.5em 1em 2.5em;
+    margin-left: 0px;
+    max-width: 35%;
+    height: 50%;
+  }
+  
+  main, aside {
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    line-height: 1.5;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  
+  #hello {
+    line-height: 1.2;
+  }

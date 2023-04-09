@@ -60,5 +60,8 @@ function DisplayResult(result) {
 
   divContainer.appendChild(divImage)
   divContainer.appendChild(divText)
-  resultDiv.prepend(divContainer)
+  while (resultDiv.firstChild) {
+    resultDiv.removeChild(resultDiv.firstChild);
+  }
+  resultDiv.appendChild(divContainer)
 }

@@ -15,10 +15,22 @@
 <main>
 
         <div class="heading">
+            
+
             <h1>Cuisiner</h1>
-        
-            <p class="intro">Upload a photo with food in it and watch the magic happen.</p>
-        
+            <div class = "box">
+                <label for="cuisine">Choose a cuisine to filter by: :</label>
+                <select name="cuisine" id="cuisine">
+                    <option value="Italian">Italian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="French">French</option>
+                    <option value="South Asian">South Asian</option>
+                    <option value="Chilean">Chilean</option>
+                </select>
+            </div>
+
+                <p class="intro">Upload a photo with food in it and watch the magic happen.</p>
+
         <h3>Photo</h3>
         </div>
         
@@ -30,8 +42,7 @@
             <form enctype="multipart/form-data" method="POST" name="fileinfo">
                 <p>
                 <input type="file" name="file" multiple = "false" id="input" required class= "inputfile"/>
-                <label for="input">Upload Photo file</label>
-
+                <label for="input">Upload Photo file</label>    
                 <input type="submit" value="Run Model" class="buttons" />
                 </p>
             </form>

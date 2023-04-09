@@ -11,6 +11,12 @@
     border: none;
 }
 
+.aligned {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
 .row {
     border: none;
 }
@@ -38,6 +44,14 @@
     width: 33%px;
     height: 300px;
     text-align: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px; 
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 11px; 
+    color: #000;
 }
 
 .buttons {

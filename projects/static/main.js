@@ -47,6 +47,16 @@ function DisplayResult(result) {
   divText = document.createElement("div")
   divText.appendChild(document.createTextNode(result))
   divText.className = "text"
+  var description;
+  if (result.includes("sashimi")) {
+    description = "A Japanese delicacy consisting of fresh raw fish or meat sliced into thin pieces.  ";
+  } else if (result.includes("panna_cotta")){
+    description = "An Italian dessert of sweetened and falvored cream thickened with gelatin. Allergens: Nuts";
+  } else {
+    description = "A French dish made of the liver of a duck or goose. Allergens: Peanuts";
+  }
+  console.log(`Description: ${description}`);
+  divText.innerHTML = `${result} - ${description}`;
 
   divContainer.appendChild(divImage)
   divContainer.appendChild(divText)

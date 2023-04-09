@@ -31,16 +31,19 @@
 }
 
 .result .image {
-    max-width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     background-image: url("test.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .result .text {
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(159, 129, 190);
     font-weight: 700;
+    border-radius: 5pt; 
+    width: 350px; 
+    color: black;
     padding: 10px 0px 10px 0px;
 }
 
@@ -161,8 +164,9 @@
   }
   
   .inputfile {
-      width: 0.1px;
+      width: 100px;
       height: 0.1px;
+      flex-direction: row; 
       opacity: 0;
       overflow: hidden;
       position: absolute;

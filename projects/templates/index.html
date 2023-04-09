@@ -35,13 +35,15 @@
             <img id="uploadedImg">
         </div>
 
-        <div style = "align-items: center" class="row">
-            <form enctype="multipart/form-data" method="POST" name="fileinfo">
+        <div class="header display-flex">
+            <form style = "display: inline-block" enctype="multipart/form-data" method="POST" name="fileinfo">
                 <p>
-                <input type="file" name="file" multiple = "false" id="input" required class= "inputfile"/>
-                <label style = "font-weight: bold; margin-bottom: 15px" for="input">Upload Photo file</label>    
-                <input style = "font-weight: bold; width: 130px;" type="submit" value="Run Model" class="buttons" />
-                </p>
+                    <div style = "width: 700px; display: flex">
+                        <input  type="file" name="file" multiple = "false" id="input" required class= "inputfile"/>
+                        <label class = "buttons" style = "font-size: 10pt; width: 170px; font-weight: bold; margin-bottom: 15px" for="input">Upload Photo</label> 
+                        <input style = "font-size: 10pt; font-weight: bold; width: 130px;" type="submit" value="Run Model" class="buttons" />
+                    </div>
+                </p>   
             </form>
     
         </div>

@@ -52,7 +52,7 @@
 }
 
 .box {
-    color: #000;
+    color: rgb(237, 237, 237);
     border: none;
     border-radius: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@
     font-family: 'Roboto', 'sans-serif';
     font-size: 10pt; 
     text-align: center;
-    background-color:rgba(46, 229, 157, 0.4)
+    background-color:rgba(8, 0, 113, 0.4)
 }
 
 .buttons {
@@ -75,8 +75,8 @@
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    color: #000;
-    background-color: #fff;
+    color: rgb(243, 239, 22);
+    background-color: rgb(19, 237, 110);
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -120,8 +120,8 @@
     margin: 0px;
     margin-left: 24px;
     border-radius: 50%;
-    border: 6px solid #606c76;
-    border-color:  #606c76 transparent  #606c76 transparent;
+    border: 6px solid #000000;
+    border-color:  #000000 transparent  #606c76 transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }
   @keyframes lds-dual-ring {
@@ -136,8 +136,13 @@
   h1 {
     font-family: "Roboto", sans-serif;
     font-size: 30pt;
-    text-align: left;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(to right, #6a5ec2, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+  
   
   .intro {
     font-size: 15pt;
@@ -186,9 +191,9 @@
   
 .inputfile:focus + label,
 .inputfile + label:hover {
-      background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
+      background-color: #4d23d7;
+    box-shadow: 0px 15px 20px rgba(89, 46, 229, 0.4);
+    color: rgb(33, 0, 131);
     transform: translateY(-3px);
 }
   
@@ -216,14 +221,14 @@
   }
   
   .buttons:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
+    background-color: #9c65e0;
+    box-shadow: 0px 15px 20px rgba(235, 188, 255, 0.4);
+    color: rgb(9, 4, 68);
     transform: translateY(-3px);
   }
   
   body {
-    background-color: #eee;
+    background-color: #2a005b;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -251,11 +256,18 @@
     width: 90%;
     line-height: 1.5;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(to right, #2278FB, #6BDFDB);
     border-radius: 0.5em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    transition: all 0.3s ease-in-out;
   }
+  
+  main:hover, aside:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+  
   
   #hello {
     line-height: 1.2;
